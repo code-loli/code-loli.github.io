@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (query_param.id == null) window.history.back();
 
-  id_text.innerHTML = query_param.id;
+  // id_text.innerHTML = query_param.id;
 
   init_page();
 });
@@ -26,6 +26,8 @@ function init_page() {
     shoe_data = globaldb.shoes[i];
     break;
   }
+
+  console.log(shoe_data);
 
   const image_tag = document.getElementById("product-image");
   const title_tag = document.getElementById("product-title");

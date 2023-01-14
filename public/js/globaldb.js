@@ -54,7 +54,7 @@ const data = {
       category: "sport",
       sname: "Basketball 1",
       price: 1000000,
-      id: 7,
+      id: 8,
     },
     {
       url: "../../public/images/SP2.jpg",
