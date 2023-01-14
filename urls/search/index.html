@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="local-style.css" />
     <link rel="stylesheet" href="../../public/styles.css" />
-    <script src="local-script.js"></script>
+    <script src="local-script.js" type="module"></script>
     <title>Document</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
       </div>
 
       <div>
-        <button class="home-button sofia" onclick="gotoHome()">
+        <button class="home-button sofia" onclick="window.location.href = '/'">
           <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
             <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
           </svg>
