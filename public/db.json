@@ -1,0 +1,44 @@
+{
+  "shoes": [
+    {
+      "url": "./images/BB1.jpg",
+      "category": "basketball"
+    },
+    {
+      "url": "./images/BB2.jpg",
+      "category": "basketball"
+    },
+    {
+      "url": "./images/BB3.jpg",
+      "category": "basketball"
+    },
+    {
+      "url": "./images/HT1.jpg",
+      "category": "hitop"
+    },
+    {
+      "url": "./images/HT2.jpg",
+      "category": "hitop"
+    },
+    {
+      "url": "./images/HT3.jpg",
+      "category": "hitop"
+    },
+    {
+      "url": "./images/HT4.jpg",
+      "category": "hitop"
+    },
+    {
+      "url": "./images/SP1.jpg",
+      "category": "sport"
+    },
+    {
+      "url": "./images/SP2.jpg",
+      "category": "sport"
+    },
+    {
+      "url": "./images/SP3.jpg",
+      "category": "sport"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/styles.css" />
+    <script src="public/js/HomeUtility.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="sofia text-primary">Andika</h1>
+      </div>
+
+      <div>
+        <button class="search-button sofia" onclick="gotoSearch()">Search</button>
+      </div>
+    </header>
+
+    <nav class="small-navbar" id="small-navbar">
+      <button>
+        <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+        </svg>
+      </button>
+      <ul class="sofia">
+        <li><a href="#sneaker-shoes">Sneaker</a></li>
+        <li><a href="#sport-shoes">Sport</a></li>
+        <li><a href="#os-shoes">Old School</a></li>
+        <li>High Tops</li>
+        <li>Basketball</li>
+      </ul>
+    </nav>
+
+    <nav class="main-navbar" id="big-navbar">
+      <ul class="sofia">
+        <li><a href="#sneaker-shoes">Sneaker</a></li>
+        <li><a href="#sport-shoes">Sport</a></li>
+        <li><a href="#os-shoes">Old School</a></li>
+        <li>High Tops</li>
+        <li>Basketball</li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="shoes-section">
+        <div class="shoes-item">
+          <img src="public/images/SN1.jpg" onclick="seeDetail()" />
+          <div class="shoe-item-desc sofia">
+            <div>Nice title for shoe</div>
+            <div>Price Here IDR</div>
+          </div>
+        </div>
+
+        <div class="shoes-item">
+          <img src="public/images/SN2.jpg" />
+          <div class="shoe-item-desc sofia">
+            <div>Nice title for shoe</div>
+            <div>Price Here IDR</div>
+          </div>
+        </div>
+
+        <div class="shoes-item">
+          <img src="public/images/SN3.jpg" />
+          <div class="shoe-item-desc sofia">
+            <div>Nice title for shoe</div>
+            <div>Price Here IDR</div>
+          </div>
+        </div>
+
+        <div class="shoes-item">
+          <img src="public/images/SN4.jpg" />
+          <div class="shoe-item-desc sofia">
+            <div>Nice title for shoe</div>
+            <div>Price Here IDR</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="big-title sofia">Sport Shoes</div>
+
+      <section class="shoes-section" id="sport-shoes">
+        <div class="shoes-item">
+          <img src="public/images/BB1.jpg" />
+          <div class="shoe-item-desc sofia">
+            <div>Nice title for shoe</div>
+            <div>Price Here IDR</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style scoped>
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #small-navbar {
+    display: block;
+  }
+
+  .small-navbar > ul > li {
+    display: list-item !important;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1em;
+  }
+
+  .big-title {
+    text-align: center;
+    margin-block: 0.5em;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .up-down {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desc-title {
+    margin: 10px;
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .shoes-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .shoes-item {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    max-width: 100%;
+  }
+
+  .shoe-item-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .shoe-item-desc > :nth-child(2) {
+    background-color: #fed766;
+    padding-block: 5px;
+    padding-inline: 20px;
+    font-weight: 300;
+  }
+
+  .shoes-item > img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header > div {
+    margin-right: 10px;
+  }
+
+  .search-button {
+    padding-block: 0.5em;
+    padding-inline-end: 6em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--dark);
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 481px) {
+    .shoes-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .shoes-section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+      padding-inline: 5em;
+    }
+
+    #small-navbar {
+      display: none;
+    }
+
+    #big-navbar {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    .shoes-section {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>
