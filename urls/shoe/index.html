@@ -4,10 +4,102 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="local-script.js"></script>
+    <link rel="stylesheet" href="local-style.css" />
+    <link rel="stylesheet" href="../../public/styles.css" />
+    <script src="local-script.js" type="module"></script>
     <title>Document</title>
   </head>
   <body>
-    Dynamic for id <span id="id-here"></span>
+    <header>
+      <div>
+        <h1 class="sofia text-primary">Andika</h1>
+      </div>
+
+      <div>
+        <button class="back-button sofia" onclick="window.history.back()">Back</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="product-info-container">
+          <p class="product-info-title sofia">MATERIALS, CARE AND ORIGIN</p>
+          <div class="product-info-description sofia">
+            <p>
+              <b><u>ORIGIN</u></b>
+            </p>
+            <p class="product-info-origin-text">
+              We work with our suppliers, workers, unions and international organizations to develop a supply chain in
+              which human rights are respected and promoted, contributing to the United Nations Sustainable Development
+              Goals.
+              <br /><br />
+              Thanks to the collaboration with our suppliers, we work to know the facilities and processes used to
+              manufacture our garments in order to know the traceability of our products.
+              <br /><br />
+              Made in China
+            </p>
+
+            <p>
+              <b><u>CARE</u></b>
+            </p>
+
+            <p class="product-info-care-text">
+              Caring for your clothes is caring for the environment. Simple steps like cleaning your clothing with a dry
+              cotton cloth or a soft brush, depending on the characteristics of the product, can help you care for it.
+              Whenever possible, try to use products that are respectful of the environment.
+            </p>
+
+            <p>
+              <b><u>MATERIALS</u></b>
+            </p>
+
+            <p class="product-info-care-text">
+              We work with monitoring programmes to ensure compliance with our social, environmental and health and
+              safety standards for our garments. To assess compliance, we have developed a programme of audits and
+              continuous improvement plans.
+            </p>
+
+            <p>
+              <b>UPPER</b>
+            </p>
+
+            <p class="product-info-care-text">75% sbs · 25% polyamide</p>
+
+            <p>
+              <b>LINING</b>
+            </p>
+
+            <p class="product-info-care-text">100% polyamide</p>
+
+            <p>
+              <b>SOLE</b>
+            </p>
+
+            <p class="product-info-care-text">100% sbs</p>
+
+            <p>
+              <b>INSOLE</b>
+            </p>
+
+            <p class="product-info-care-text">100% polyamide</p>
+          </div>
+        </div>
+        <div class="product-image">
+          <img id="product-image" src="../../public/images/HT1.jpg" alt="" style="max-width: 100%" />
+        </div>
+        <div class="product-detail">
+          <p class="product-title sofia" id="product-title">Title Here, might be longer</p>
+          <p class="product-description sofia">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ipsam temporibus vitae nihil quas aliquid
+            voluptate ea amet dolorem architecto eius quibusdam corporis, laboriosam ex veniam? Dolore reiciendis sunt
+            animi?
+          </p>
+          <p class="product-price sofia" id="product-price">RP 100000 IDR</p>
+          <br />
+          <br />
+          <button class="buy-button sofia">Buy Now</button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

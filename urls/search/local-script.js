@@ -59,7 +59,7 @@ function refresh(_data) {
     _content += `
 
     <div class="shoes-item">
-    <img src="${_data.shoes[i].url}" />
+    <img src="${_data.shoes[i].url}" onclick='window.location.href="/urls/shoe/?id=${_data.shoes[i].id}" ' />
     <div class="shoe-item-desc sofia">
       <div>${_data.shoes[i].sname}</div>
       <div>${formatter.format(_data.shoes[i].price)}</div>

@@ -4,7 +4,10 @@ function initShoes() {
   const shoesSection = document.getElementById("shoes-section");
   //   shoesSection.innerHTML = "BRUHHHHHHH";
 
-  fillSneaker();
+  fill_shoes("sneaker", "sneaker-container");
+  fill_shoes("sport", "sport-container");
+  fill_shoes("hitop", "hitop-container");
+  fill_shoes("basketball", "basket-container");
 }
 
 function gotoSearch() {
@@ -21,20 +24,20 @@ function seeDetail() {
   console.log("Click image");
 }
 
-function fillSneaker() {
-  const sneaker_container = document.getElementById("sneaker-container");
+function fill_shoes(type, containerName) {
+  const sneaker_container = document.getElementById(containerName);
 
   let _content = "";
 
   const data = globaldb;
 
   for (let i = 0; i < data.shoes.length; i++) {
-    if (data.shoes[i].category !== "basketball") continue;
+    if (data.shoes[i].category !== type) continue;
 
     _content += `
 
   <div class="shoes-item">
-    <img src="${data.shoes[i].url}" />
+    <img src="${data.shoes[i].url}" onclick="window.location.href='./urls/shoe/?id=${data.shoes[i].id}' " />
     <div class="shoe-item-desc sofia">
       <div>${data.shoes[i].sname}</div>
       <div>${formatter.format(data.shoes[i].price)}</div>

@@ -37,11 +37,11 @@
 
     <nav class="main-navbar" id="big-navbar">
       <ul class="sofia">
-        <li><a href="#sneaker-shoes">Sneaker</a></li>
-        <li><a href="#sport-shoes">Sport</a></li>
+        <li><a href="#sneaker-container">Sneaker</a></li>
+        <li><a href="#sport-container">Sport</a></li>
         <li><a href="#os-shoes">Old School</a></li>
-        <li>High Tops</li>
-        <li>Basketball</li>
+        <li><a href="#hitop-container">High Tops</a></li>
+        <li><a href="#basket-container">Basketball</a></li>
       </ul>
     </nav>
 
@@ -50,15 +50,15 @@
 
       <div class="big-title sofia">Sport Shoes</div>
 
-      <section class="shoes-section" id="sport-shoes">
-        <div class="shoes-item">
-          <img src="public/images/BB1.jpg" />
-          <div class="shoe-item-desc sofia">
-            <div>Nice title for shoe</div>
-            <div>Price Here IDR</div>
-          </div>
-        </div>
-      </section>
+      <section class="shoes-section" id="sport-container"></section>
+
+      <div class="big-title sofia">Hi Tops</div>
+
+      <section class="shoes-section" id="hitop-container"></section>
+
+      <div class="big-title sofia">Basketball</div>
+
+      <section class="shoes-section" id="basket-container"></section>
     </main>
   </body>
 </html>
@@ -83,6 +83,7 @@
     align-items: center;
     justify-content: space-between;
     padding-inline: 1em;
+    position: sticky;
   }
 
   .big-title {
