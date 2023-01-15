@@ -119,7 +119,7 @@ body {
 }
 
 .big-text {
-  font-size: 105px;
+  font-size: 40px;
 }
 
 .text-rose {
@@ -227,5 +227,8 @@ body {
     grid-template-areas:
       "sec1 sec1 sec1 sec2 sec2 sec2"
       "cp cp cp cp cp cp";
+  }
+  .big-text {
+    font-size: 105px;
   }
 }
