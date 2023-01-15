@@ -8,6 +8,7 @@ function initShoes() {
   fill_shoes("sport", "sport-container");
   fill_shoes("hitop", "hitop-container");
   fill_shoes("basketball", "basket-container");
+  fill_shoes("highheels", "highheels-container");
 }
 
 function gotoSearch() {

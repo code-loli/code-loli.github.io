@@ -98,6 +98,34 @@ const data = {
       price: 1000000,
       id: 14,
     },
+    {
+      url: "../../public/images/HH1.jpg",
+      category: "highheels",
+      sname: "High Heels 1",
+      price: 1000000,
+      id: 15,
+    },
+    {
+      url: "../../public/images/HH2.jpg",
+      category: "highheels",
+      sname: "High Heels 2",
+      price: 1000000,
+      id: 16,
+    },
+    {
+      url: "../../public/images/HH3.jpg",
+      category: "highheels",
+      sname: "High Heels 3",
+      price: 1000000,
+      id: 17,
+    },
+    {
+      url: "../../public/images/HH4.jpg",
+      category: "highheels",
+      sname: "High Heels 4",
+      price: 1000000,
+      id: 18,
+    },
   ],
 };
 
@@ -105,5 +133,7 @@ export const formatter = new Intl.NumberFormat("id-ID", {
   style: "currency",
   currency: "IDR",
 });
+
+export const banner = "/public/images/zara.png";
 
 export default data;

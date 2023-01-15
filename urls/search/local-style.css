@@ -44,7 +44,7 @@ header {
 }
 
 .input-text:focus {
-  border-bottom: 4px solid var(--primary);
+  border-bottom: 4px solid var(--rose);
 }
 
 .result-section {
