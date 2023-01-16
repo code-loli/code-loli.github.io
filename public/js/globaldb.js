@@ -5,6 +5,7 @@ const data = {
       category: "basketball",
       sname: "Basketball 1",
       price: 1000000,
+      about: "about this product",
       id: 1,
     },
     {
@@ -12,6 +13,7 @@ const data = {
       category: "basketball",
       sname: "Basketball 1",
       price: 1000000,
+      about: "about this product",
       id: 2,
     },
     {
@@ -19,6 +21,7 @@ const data = {
       category: "basketball",
       sname: "Basketball 1",
       price: 1000000,
+      about: "about this product",
       id: 3,
     },
     {
@@ -26,6 +29,7 @@ const data = {
       category: "hitop",
       sname: "Hi Tops1",
       price: 1000000,
+      about: "about this product",
       id: 4,
     },
     {
@@ -33,6 +37,7 @@ const data = {
       category: "hitop",
       sname: "Hi Tops 2",
       price: 1000000,
+      about: "about this product",
       id: 5,
     },
     {
@@ -40,6 +45,7 @@ const data = {
       category: "hitop",
       sname: "Hi Tops 3",
       price: 1000000,
+      about: "about this product",
       id: 6,
     },
     {
@@ -47,6 +53,7 @@ const data = {
       category: "hitop",
       sname: "Hi Tops 4",
       price: 1000000,
+      about: "about this product",
       id: 7,
     },
     {
@@ -54,6 +61,7 @@ const data = {
       category: "sport",
       sname: "Basketball 1",
       price: 1000000,
+      about: "about this product",
       id: 8,
     },
     {
@@ -61,6 +69,7 @@ const data = {
       category: "sport",
       sname: "Sport 2",
       price: 1000000,
+      about: "about this product",
       id: 9,
     },
     {
@@ -68,6 +77,7 @@ const data = {
       category: "sport",
       sname: "Sport 3",
       price: 1000000,
+      about: "about this product",
       id: 10,
     },
     {
@@ -75,6 +85,7 @@ const data = {
       category: "sneaker",
       sname: "Sneaker 1",
       price: 1000000,
+      about: "about this product",
       id: 11,
     },
     {
@@ -82,6 +93,7 @@ const data = {
       category: "sneaker",
       sname: "Sneaker 2",
       price: 1000000,
+      about: "about this product",
       id: 12,
     },
     {
@@ -89,6 +101,7 @@ const data = {
       category: "sneaker",
       sname: "Sneaker 3",
       price: 1000000,
+      about: "about this product",
       id: 13,
     },
     {
@@ -96,34 +109,42 @@ const data = {
       category: "sneaker",
       sname: "Sneaker 4",
       price: 1000000,
+      about: "about this product",
       id: 14,
     },
     {
       url: "../../public/images/HH1.jpg",
       category: "highheels",
-      sname: "High Heels 1",
+      sname: "SEPATU HAK VINIL HIASAN",
       price: 1000000,
+      about: "Sepatu dengan hak tanpa tumit dari vinil. Detail berupa hiasan dengan kemilau di bagian depan.",
       id: 15,
     },
     {
       url: "../../public/images/HH2.jpg",
       category: "highheels",
-      sname: "High Heels 2",
+      sname: "SEPATU HAK GLITER",
       price: 1000000,
+      about: `Sepatu dengan hak tinggi jenis high heels dengan kemilau. Bagian ujung berbentuk runcing.
+      </br> </br>
+      AIRFIT®. Sol dalam teknis fleksibel dari busa yang terbuat dari lateks, didesain untuk memberikan`,
       id: 16,
     },
     {
       url: "../../public/images/HH3.jpg",
       category: "highheels",
-      sname: "High Heels 3",
+      sname: "SEPATU HAK BELUDRU",
       price: 1000000,
+      about: "Sepati jenis high heels dari beludru. Hak tinggi tipis. Bagian ujung berbentuk runcing.",
       id: 17,
     },
     {
       url: "../../public/images/HH4.jpg",
       category: "highheels",
-      sname: "High Heels 4",
+      sname: "SEPATU HAK TINGGI PENUTUP JARI KAKI KEMILAU",
       price: 1000000,
+      about:
+        "Sepatu dengan hak tinggi jenis high heels. Bagian ujung berbentuk runcing. Detail berupa kemilau di bagian ujung kaki.",
       id: 18,
     },
   ],

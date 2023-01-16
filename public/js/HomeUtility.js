@@ -1,9 +1,6 @@
 import globaldb, { formatter } from "./globaldb.js";
 
 function initShoes() {
-  const shoesSection = document.getElementById("shoes-section");
-  //   shoesSection.innerHTML = "BRUHHHHHHH";
-
   fill_shoes("sneaker", "sneaker-container");
   fill_shoes("sport", "sport-container");
   fill_shoes("hitop", "hitop-container");
@@ -41,7 +38,7 @@ function fill_shoes(type, containerName) {
     <img src="${data.shoes[i].url}" onclick="window.location.href='./urls/shoe/?id=${data.shoes[i].id}' " />
     <div class="shoe-item-desc sofia">
       <div>${data.shoes[i].sname}</div>
-      <div>${formatter.format(data.shoes[i].price)}</div>
+      <div style="height:fit-content">${formatter.format(data.shoes[i].price)}</div>
     </div>
   </div>
 

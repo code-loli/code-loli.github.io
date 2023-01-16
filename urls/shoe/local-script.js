@@ -35,7 +35,13 @@ function init_page() {
   const image_tag = document.getElementById("product-image");
   const title_tag = document.getElementById("product-title");
   const price_tag = document.getElementById("product-price");
+  const about_tag = document.getElementById("product-description");
+
+  title_tag.style.overflowWrap = "break-word";
+  title_tag.style.maxWidth = "15ch";
+
   image_tag.src = shoe_data.url;
   title_tag.innerHTML = shoe_data.sname;
   price_tag.innerHTML = formatter.format(shoe_data.price);
+  about_tag.innerHTML = shoe_data.about;
 }
