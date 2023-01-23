@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./local-script.js" type="module"></script>
+    <link rel="stylesheet" href="./local-style.css" />
+    <link rel="stylesheet" href="/public/styles.css" />
+    <link rel="stylesheet" href="/public/bootstrap/css/bootstrap.css" />
+    <script src="/public/bootstrap/js/bootstrap.js"></script>
+    <script src="./local-script.js" type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main style="min-height: 100vh" class="mt-5">
+      <div class="text-center fs-2 fw-bold text-decoration-underline sofia mb-3">Login</div>
+
+      <p id="err-msg" class="text-center text-danger"></p>
+
+      <div class="text-center">
+        <form action="" id="login-form">
+          <div class="mb-2">
+            <input type="text" class="sofia" name="username" placeholder="Username" />
+          </div>
+          <div class="mb-2">
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+
+          <button class="login-button sofia" type="submit">Login</button>
+        </form>
+        <br />
+        <p class="sofia">Belum punya akun? <a href="/urls/register" style="color: var(--rose)">Daftar disini</a></p>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

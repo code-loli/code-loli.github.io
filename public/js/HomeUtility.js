@@ -1,4 +1,5 @@
 import globaldb, { formatter } from "./globaldb.js";
+import { init_header } from "./globalfunc.js";
 
 function initShoes() {
   fill_shoes("sneaker", "sneaker-container");
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("Bruh");
   console.log("Loaded");
   initShoes();
+  init_header();
 });
 
 function seeDetail() {

@@ -1,0 +1,20 @@
+textarea {
+  padding: 1em;
+  border-radius: 5px;
+  outline: none;
+  border: 3px solid var(--rose);
+}
+
+main {
+  min-height: 100vh;
+}
+
+.rep-button {
+  outline: none;
+  border: none;
+  background-color: var(--rose);
+  color: white;
+  padding-block: 0.3em;
+  padding-inline: 1em;
+  border-radius: 5px;
+}

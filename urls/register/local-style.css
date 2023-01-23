@@ -1,0 +1,17 @@
+input {
+  outline: none;
+  border: 2px solid var(--rose);
+  border-radius: 5px;
+  padding-inline: 1em;
+  padding-block: 0.3em;
+  width: 250px;
+}
+
+.login-button {
+  border: none;
+  background-color: var(--rose);
+  border-radius: 5px;
+  color: white;
+  padding-block: 0.3em;
+  width: 250px;
+}

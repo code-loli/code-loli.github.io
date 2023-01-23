@@ -3,7 +3,7 @@ import { banner } from "./globaldb.js";
 export function init_header() {
   const header_tag = document.getElementsByTagName("header");
 
-  const content = `
+  let content = `
   <div>
     <img src="${banner}" alt="" width="200" style="margin-block: 1em" />
   </div>
@@ -11,12 +11,39 @@ export function init_header() {
   <div>
     <button class="search-button sofia" onclick="window.location.href = '/urls/search'">Search</button>
     <button class="header-button sofia" onclick="window.location.href = '/'">Home</button>
-    <button class="header-button sofia" onclick="window.location.href = '/'">Login</button>
+    <button class="header-button sofia" onclick="window.location.href = '/urls/gallery'">Gallery</button>
+    <button class="header-button sofia" onclick="window.location.href = '/urls/report'">Laporan</button>
+    <button class="header-button sofia" onclick="window.location.href = '/urls/login'">Login</button>
   </div>
   
   `;
 
+  if (localStorage.getItem("username") !== null) {
+    content = `
+    
+  <div>
+    <img src="${banner}" alt="" width="200" style="margin-block: 1em" />
+  </div>
+
+  <div>
+    <button class="search-button sofia" onclick="window.location.href = '/urls/search'">Search</button>
+    <button class="header-button sofia" onclick="window.location.href = '/'">Home</button>
+    <button class="header-button sofia" onclick="window.location.href = '/urls/gallery'">Gallery</button>
+    <button class="header-button sofia" onclick="window.location.href = '/urls/report'">Laporan</button>
+    <span class="header-logout fw-bold sofia" onclick="localStorage.removeItem('username'); window.location.href = '/' ">Logged in as ${localStorage.getItem(
+      "username"
+    )}</span>
+  </div>
+  
+  `;
+  }
+
   header_tag[0].innerHTML = content;
+}
+
+export function logout() {
+  localStorage.removeItem("username");
+  window.location.href = "/";
 }
 
 export function init_footer() {

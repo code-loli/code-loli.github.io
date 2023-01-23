@@ -124,7 +124,7 @@ const data = {
       url: "../../public/images/HH2.jpg",
       category: "highheels",
       sname: "SEPATU HAK GLITER",
-      price: 1000000,
+      price: 1500000,
       about: `Sepatu dengan hak tinggi jenis high heels dengan kemilau. Bagian ujung berbentuk runcing.
       </br> </br>
       AIRFIT®. Sol dalam teknis fleksibel dari busa yang terbuat dari lateks, didesain untuk memberikan`,
